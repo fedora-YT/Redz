@@ -16,8 +16,8 @@ local redzlib = {
                 ColorSequenceKeypoint.new(0.50, Color3.fromRGB(20, 20, 20)),-- dark gray
                 ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))    -- pure black
             }),
-            ["Color Hub 2"] = Color3.fromRGB(255, 255, 255),     -- panel background
-            ["Color Stroke"] = Color3.fromRGB(200, 200, 200), -- light border
+            ["Color Hub 2"] = Color3.fromRGB(20, 20, 20),     -- panel background
+            ["Color Stroke"] = Color3.fromRGB(255, 255, 255), -- light border
             ["Color Theme"] = Color3.fromRGB(255, 255, 255),  -- accent (white)
             ["Color Text"] = Color3.fromRGB(255, 255, 255),   -- normal text
             ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- secondary text
