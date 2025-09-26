@@ -1595,13 +1595,13 @@ function redzlib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "Đóng Ứng Dụng",
-			Text = "Bạn Muốn Tắt Script Này Không :((",
+			Title = "أنتَ على وشك اغلاق سكربت فيدورا",
+			Text = "هل انتَ متأكد؟",
 			Options = {
-				{"Có", function()
+				{"نعم", function()
 					ScreenGui:Destroy()
 				end},
-				{"Không"}
+				{"لا"}
 			}
 		})
 	end
