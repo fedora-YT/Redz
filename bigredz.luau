@@ -2717,3 +2717,19 @@ function redzlib:MakeWindow(Configs)
 end
 
 return redzlib
+
+
+local function ResizeText(obj, scale)
+    if not obj then return end
+    if obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
+        obj.TextSize = obj.TextSize * scale
+    end
+end
+
+local function ResizeAllText(parent, scale)
+    for _, child in ipairs(parent:GetDescendants()) do
+        if child:IsA("TextLabel") or child:IsA("TextButton") or child:IsA("TextBox") then
+            child.TextSize = child.TextSize * scale
+        end
+    end
+end
